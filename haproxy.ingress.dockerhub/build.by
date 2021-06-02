@@ -1,0 +1,30 @@
+docker pull haproxytech/kubernetes-ingress
+
+exit 0
+
+--configmap default/haproxy-configmap
+--configmap-tcp-services	
+--configmap-errorfiles	
+--default-backend-service	
+--default-ssl-certificate	
+--ingress.class	
+--empty-ingress-class false
+--namespace-blacklist	
+--namespace-whitelist	
+--publish-service	
+--disable-ipv4	false
+--disable-ipv6	false
+--ipv4-bind-address	0.0.0.0
+--ipv6-bind-address	::
+--http-bind-port	80
+--https-bind-port	443
+--disable-http	false
+--disable-https	false
+--sync-period	5s
+--cache-resync-period	10m
+--log	info
+--external	false
+--program	haproxy in PATH location
+--config-dir	/tmp/haproxy-ingress/etc
+--runtime-dir	/tmp/haproxy-ingress/run
+

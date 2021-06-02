@@ -1,0 +1,11 @@
+
+docker run -d \
+	--name geonetwork-3.10 \
+	-p 8080:8080 \
+    -e POSTGRES_DB_HOST=192.168.15.11 \
+    -e POSTGRES_DB_PORT=5433 \
+	-e POSTGRES_DB_USERNAME=postgres \
+	-e POSTGRES_DB_PASSWORD=postgres \
+	-e POSTGRES_DB_NAME=geonetwork.3.10 \
+	-v /host/geonetwork-docker:/var/lib/geonetwork \
+	geonetwork:3.10.6.postgis

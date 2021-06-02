@@ -1,0 +1,2 @@
+echo "# need config file, in /path/to/etc/haproxy"
+echo "docker run -d --name haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro --sysctl net.ipv4.ip_unprivileged_port_start=0 haproxy:lts"

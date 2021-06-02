@@ -1,0 +1,4 @@
+docker run -d \
+	-p 5433:5432 \
+	--env-file postgis.env \
+	postgis/postgis:12-master

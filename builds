@@ -1,0 +1,6 @@
+#!/bin/bash
+for dir in geonetwork.dockerhub geonetwork.postgres postgis.dockerhub ; do
+	cd $dir
+	sh build
+	cd ..
+done 
